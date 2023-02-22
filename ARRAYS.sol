@@ -4,7 +4,7 @@ pragma solidity >=0.5.0<0.9.0;
 
 contract array{
     uint[] arr;
-
+    uint[] Arr=[1,2,3,4,5,6,7,8,9];
     function addElement(uint _element)public{
         arr.push(_element);
     }
@@ -36,4 +36,10 @@ contract array{
         }
         return arr;
     }
+    function findsum()public view returns{
+        uint sum=0;
+        for(uint i = 0;i<arr.lemgth;i++){
+        sum += Arr[i];
+        }
+        return sum;
 }
